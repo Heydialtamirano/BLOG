@@ -1,0 +1,12 @@
+<p>
+<strong>Commenter:</strong>
+<%= comment.commenter %>
+</p>
+<p>
+<strong>Comment:</strong>
+<%= comment.body %>
+</p>
+<p>
+
+<%= button_to "Eliminar Comentario", [comment.article, comment],method: :delete, class: "btn btn-link", form: { data: { turbo_confirm: "Seguro de eliminar este comentario?" } } %>
+</p>
